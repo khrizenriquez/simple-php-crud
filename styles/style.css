@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f7;
+    height: 100vh;
+}
+.container {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.user-name {
+    animation: colorChange 2s infinite alternate;
+}
+@keyframes colorChange {
+    0% {
+        color: #ADD8E6;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+.menu {
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em;
+    border-radius: 1em;
+    transition: all 0.15s linear;
+}
+.menu a:hover {
+    background-color: #007bff;
+    cursor: pointer;
+    color: #fff;
+}
+.menu a.active {
+    background-color: #007bff;
+    cursor: pointer;
+    color: #fff;
+}
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+.button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+.button-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.button-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+.button-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.button-secondary:hover {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+.button-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.button-success:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.button-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+.table-sm th,
+.table-sm td {
+    padding: 0.3rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.form-submit:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.form-check-input {
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -1.25rem;
+}
+.form-check-label {
+    margin-bottom: 0;
+}
+form label {
+    display: inline-block;
+}
+form input {
+    display: block;
+    width: 95%;
+}
+
+.success-message {
+    padding: 1em;
+    color: white;
+    background-color: #28a745;
+    border-radius: 2em;
+    transition: all 1s linear;
+    margin-bottom: 1em;
+
+}
+
+.status {
+    text-align: center;
+}
+.status span {
+    padding: 0.4em;
+    color: white;
+    font-size: 0.8em;
+}
+.status-active {
+    background: green;
+    border-radius: 2em;
+}
+.status-inactive {
+    background: red;
+    border-radius: 2em;
+}
+.blurred {
+    filter: blur(5px);
+}
+.menu-logout {
+    background-color: red;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.8em;
+}
+a.menu-logout {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 700px) {
+    .menu a {
+        margin: 0 5px;
+    }
+}
+@media (max-width: 618px) {
+    .menu a {
+        margin: 0 5px;
+        display: block;
+    }
+}

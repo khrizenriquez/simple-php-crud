@@ -1,0 +1,83 @@
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    z-index: 99999;
+}
+.login-container p {
+    font-size: 0.8em;
+}
+.login-container p b {
+    font-size: 1.3em;
+}
+
+.login-container img {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #0071e3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-container button:hover {
+    background-color: #005bb5;
+}
+
+.login-container a {
+    display: block;
+    margin-top: 15px;
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 450px) {
+    .login-container {
+        width: 90%;
+    }
+    .login-container img {
+        width: 70%;
+        margin-bottom: 0px;
+    }
+}
